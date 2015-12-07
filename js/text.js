@@ -19,7 +19,7 @@ audio1.addEventListener('playing', function(){
       for (var i = 0; i < a1stamps.length; i++) {
         if (a1time > a1stamps[i]) {
           var prevCSS = s1words.getElementsByClassName("word")[i].style.cssText;
-          s1words.getElementsByClassName("word")[i].style.cssText = prevCSS + "font-weight: bold;";
+          s1words.getElementsByClassName("word")[i].style.cssText = prevCSS + "font-weight: bold; color: gray;";
         } else {
           s1words.getElementsByClassName("word")[i].style.fontWeight = "normal";
         }
