@@ -22,6 +22,7 @@ audio1.addEventListener('playing', function(){
           s1words.getElementsByClassName("word")[i].style.cssText = prevCSS + "font-weight: bold; color: gray;";
         } else {
           s1words.getElementsByClassName("word")[i].style.fontWeight = "normal";
+          s1words.getElementsByClassName("word")[i].style.removeProperty("color");
         }
       }
     }, 100);
